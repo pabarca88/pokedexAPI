@@ -24,8 +24,7 @@ Este proyecto es una API REST para gestionar entrenadores y Pokémon, incluyendo
 1. **Clonar el repositorio**
 
    ```bash
-   git clone https://github.com/tu-usuario/pokemon-api.git
-   cd pokemon-api
+   git clone https://github.com/pabarca88/pokedexAPI.git
 
 2. **Instalar dependencias**
 
