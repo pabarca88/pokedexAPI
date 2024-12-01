@@ -235,6 +235,3 @@ Este endpoint permite crear un nuevo Pokémon. El cuerpo de la solicitud debe in
   }
 ]
 ```
-
-
->>>>>>> 06e363d (First commit)
