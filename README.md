@@ -40,6 +40,70 @@ El servidor estará corriendo en http://localhost:3000.
 
 ## Rutas de la API
 
+### Login
+
+`URL: POST /auth/login`
+
+Esta ruta permite que los usuarios inicien sesión proporcionando su nombre de usuario y contraseña.
+
+#### Cuerpo de la solicitud (JSON):
+```json
+{
+  "username": "ash",
+  "password": "ash123"
+}
+```
+
+#### Respuesta exitosa (200 OK):
+```json
+{
+  "token": "jwt_token_aqui"
+}
+```
+#### Respuesta de error (400 Bad Request):
+
+```json
+{
+    "error": "Credenciales incorrectas"
+}
+```
+
+### Registro
+
+`URL: POST /auth/register`
+
+Esta ruta permite registrar un nuevo usuario proporcionando un nombre de usuario y una contraseña.
+
+#### Cuerpo de la solicitud (JSON):
+
+```json
+{
+  "username": "username",
+  "password": "password"
+}
+```
+
+#### Respuesta exitosa (201 Created):
+```json
+{
+    "message": "Usuario registrado exitosamente",
+    "user": {
+        "id": 4,
+        "username": "username",
+        "role": "trainer"
+    }
+}
+```
+
+#### Respuesta de error (400 Bad Request):
+
+```json
+{
+  "message": "El nombre de usuario ya existe"
+}
+```
+
+
 ### Rutas públicas
 
 - **`GET pokemon/`**: Obtener todos los Pokémon (con paginación).
