@@ -194,6 +194,15 @@ Este endpoint permite crear un nuevo Pokémon. El cuerpo de la solicitud debe in
 
 ### Actualizar un Pokémon
 
+Para realizar esta acción, es necesario incluir un token de autenticación en los encabezados de la solicitud. Este token garantiza que solo usuarios autorizados puedan realizar modificaciones.
+
+#### Agregar el token
+El token debe enviarse en el encabezado Authorization de la solicitud en el siguiente formato:
+
+```
+Authorization: Bearer <tu-token-aquí>
+```
+
 #### `PUT pokemon/:id`
 
 ```json
